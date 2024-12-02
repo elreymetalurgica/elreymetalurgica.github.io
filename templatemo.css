@@ -524,6 +524,9 @@ font-size: 20px;
   .row .btn-success {
     margin-top: 8px;
   }
+  .container-icon svg{
+    margin-left: 1px !important;
+   }
 }
 @media screen and (max-width:912px) {
   .row .btn-success {
@@ -584,6 +587,7 @@ font-size: 20px;
   .row .btn-success {
     margin-top: 390px;
   }
+
 }
 @media screen and (max-width:375px) {
   .row .btn-success {

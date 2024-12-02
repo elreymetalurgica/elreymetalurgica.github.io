@@ -49,10 +49,9 @@
 /* Contenedor con scroll para productos */
 .row-product {
   flex-grow: 1; /* Ocupa el espacio disponible */
-  overflow-y: auto; /* Habilita el scroll para productos */
+ /* Habilita el scroll para productos */
   padding: 10px;
   border-bottom: 1px solid #eee;
- 
 }
 .row-product p{
   color: #000;
@@ -184,11 +183,14 @@
     justify-content: space-between;
     background-color: #fff;
     width: 600px;
-
+    
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
-    
   } 
+  .row-product{
+    max-height: 300px; /* Limita la altura máxima del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical */
+  }
   .cart-product{
     display: flex;
     align-items: center;
@@ -590,6 +592,12 @@
     .container-cart-products{
       margin-left: 130px;
     }
+
+footer .text-left{
+  font-size: 20px !important;
+  margin-top: 60px;
+}
+
 }
 @media screen and (max-width:950px) {
   .container-cart-products{
@@ -614,6 +622,10 @@
 @media screen and (max-width:768px) {
   .container-cart-products{
     margin-left: 15px;
+  }
+  footer .text-left{
+    font-size: 20px !important;
+    margin-top: 10px;
   }
 }
 @media screen and (max-width:710px) {
@@ -662,7 +674,6 @@
     margin-left: -10px;
   }
 }
-
 @media screen and (max-width:500px) {
   .icon-cart{
   margin-left: -30px !important;
@@ -673,5 +684,44 @@
   .container-cart-products{
     margin-left: -20px;
     width: 350px;
+  }
+}
+@media screen and (max-width:458px) {
+footer .text-left{
+  font-size: 16px !important;
+  
+}
+}
+@media screen and (max-width:400px) {
+  .info-product button, .btn-close-info{
+      width: 185px;
+      margin-left: 3px;
+  }
+  .info-product .btn-ver{
+    padding: 0px 55px;
+  }
+}
+@media screen and (max-width:385px) { 
+    .container-cart-products{
+      margin-left: 0px;
+    }
+}
+@media screen and (max-width:372px) {
+  footer .text-left{
+    font-size: 13px !important;
+    
+  }
+}
+
+@media screen and (max-width:1250px) {
+  .info-cart-product p{
+    font-size: 15px;
+    text-align: center;
+  }
+  .info-cart-product span{
+    font-size: 15px;
+  }
+  .btn-finish{
+    margin-top: 60px;
   }
 }

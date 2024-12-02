@@ -8,11 +8,10 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="pnglogo.ico">
-
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="templatemo.css">
     <link rel="stylesheet" href="custom.css">
-<link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="shop.css">
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
@@ -26,11 +25,13 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container d-flex justify-content-between align-items-center">
 
-            <img class="imagenRey" src="logoblanco-removebg-preview.png" alt="Logotipo de Metalúrgica El Rey">
+            <img class="imagenRey" src="logoblanco-removebg-preview-blanco.png" alt="Logotipo de Metalúrgica El Rey">
 
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+             <div class="button-resp">
+                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+             </div>
 
             <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
                 <div class="flex-fill">
@@ -107,18 +108,32 @@
         </div>
     </nav>
     <!-- Close Header -->
+   
  <section>
-    <div class="present">
-     <div class="present-content">
-        <h1>Bienvenidos a Metalúrgica El Rey</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quaerat aperiam delectus necessitatibus cum, ullam porro accusamus, laudantium beatae perferendis voluptatem mollitia et animi assumenda. Facilis eligendi explicabo suscipit iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, odit! Architecto, magnam? Quia corporis rem maxime temporibus, rerum culpa. Autem tenetur saepe eveniet consequuntur culpa, quis veritatis fugiat eos dignissimos.</p>
-        <div class="button-content">
-            <a href="shop.html" class="btn-input" style="text-decoration: none;"> Ver catálogo</a>       
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide" style="background-image: url('car1.jpeg');">
+                <div class="overlay"></div>
+                
+            </div>
+            <div class="slide" style="background-image: url('car2.jpg');">
+                <div class="overlay"></div>
+               
+            </div>
+            <div class="slide" style="background-image: url('car3.jpg');">
+                <div class="overlay"></div>
+               
+            </div>
+            <div class="slide" style="background-image: url('car4.jpg');">
+                <div class="overlay"></div>
+               
+            </div>
         </div>
-     </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
     </div>
  </section>
-<!--Servicios flash-->
+ 
  <section id="servicios" class="servicios">
     <div class="servicios-content">
         <div class="casilla">
@@ -139,8 +154,13 @@
       
             <img src="HormigoneraCaballete.png" alt="">
         </div>
+       
+    </div>
+    <div class="button-content">
+        <a href="shop.html" class="btn-input" style="text-decoration: none;"> Ver catálogo</a>       
     </div>
 </section>
+
 
 <section class="bg-success py-5" id="abo">
     <div class="container">
@@ -150,7 +170,7 @@
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa ea distinctio. Voluptas, officiis! Explicabo illum quis, autem et modi ex voluptatem animi neque sapiente iure? Eligendi odit dicta officiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dolore commodi officiis quos delectus totam nisi fugiat non beatae, aut placeat sit? Autem id, necessitatibus velit quos quas rem molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima voluptates quam amet consequuntur numquam ducimus accusamus, sapiente cupiditate expedita in quae nostrum dignissimos omnis dolore? Nostrum nemo tempora magni corporis!
                 </p>
             </div>
             <div class="col-md-4">
@@ -264,6 +284,7 @@
 
     </footer>
     <!-- Start Script -->
+     <script src="scripcar.js"></script>
     <script src="jquery-1.11.0.min.js"></script>
     <script src="jquery-migrate-1.2.1.min.js"></script>
     <script src="bootstrap.bundle.min.js"></script>

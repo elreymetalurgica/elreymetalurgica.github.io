@@ -8,11 +8,15 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="pnglogo.ico">
-
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="templatemo.css">
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="shop.css">
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    
+    
     
     <!-- Load fonts style after rendering the layout styles -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -20,120 +24,109 @@
 
     <!-- Load map styles -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
-    
-<!--
-    
-TemplateMo 559 Zay Shop
-
-https://templatemo.com/tm-559-zay-shop
-
--->
 </head>
-
 <body>
    
      <!-- Header -->
- <nav class="navbar navbar-expand-lg navbar-light shadow">
-     <div class="container d-flex justify-content-between align-items-center">
- 
-         <img class="imagenRey" src="logoblanco-removebg-preview.png" alt="Logotipo de Metalúrgica El Rey">
- 
-         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-         </button>
- 
-         <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
-             <div class="flex-fill">
-                 <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                     <li class="nav-item">
-                         <a class="nav-link" href="index.html">Inicio</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="index.html#abo">Sobre nosotros</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="shop.html">Catálogo</a>
-                     </li>
-                     <li class="nav-item">
-                         <a class="nav-link" href="contact.html">Contacto</a>
-                     </li>
-                 </ul>
+     <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <img class="imagenRey" src="logoblanco-removebg-preview-blanco.png" alt="Logotipo de Metalúrgica El Rey">
+
+             <div class="button-resp">
+                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
              </div>
-             <div class="navbar align-self-center d-flex">
-     
-                <div class="navbar align-self-center d-flex caricon">
-                 <div class="container-icon">
-                     <div class="container-cart-icon">
-                         <svg  onclick="window.location.href='shop.html'"
-                             xmlns="http://www.w3.org/2000/svg"
-                             fill="none"
-                             viewBox="0 0 24 24"
-                             stroke-width="1.5"
-                             stroke="currentColor"
-                             class="icon-cart"
-                         >
-                             <path
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round"
-                                 d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                             />
-                         </svg>
-                        
-                     </div>
-     
- 
-                     <div class="container-cart-products hidden-cart">
-                         <div class="row-product hidden">
-                             <div class="cart-product">
-                                 <div class="info-cart-product">
-                                     <span class="cantidad-producto-carrito"></span>
-                                     <p class="titulo-producto-carrito"></p>
-                                     <span class="precio-producto-carrito"></span>
-                                 </div>
-                                 <svg
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke-width="1.5"
-                                     stroke="currentColor"
-                                     class="icon-close"
-                                 
-                                     <path
-                                         stroke-linecap="round"
-                                         stroke-linejoin="round"
-                                         d="M6 18L18 6M6 6l12 12"
-                                     />
-                                 </svg>
-                             </div>
-                         </div>
-     
-                         <div class="cart-total hidden">
-                             <div class="cart-total-wrap">
-                                 <h3>Total:</h3>
-                                 <span class="total-pagar"></span>
-                             </div>
-                            <p>Presiona el siguiente botón para avanzar al siguiente paso</p>
-                             <button class = "btn-finish" style="background: tomato; margin-top: -15px;">Finalizar compra</button>
-                         </div>
-                         <p class="cart-empty">El carrito está vacío</p>
-                     </div>
-                 </div>
-               
-             </div>
-               
-             </div>
-         </div>
- 
-     </div>
- </nav>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#abo">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+        
+                   <div class="navbar align-self-center d-flex caricon" >
+                    <div class="container-icon">
+                        <svg 
+                        onclick="window.location.href='shop.html'"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-cart"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                            />
+                        </svg>
+                       
+        
+                        <div class="container-cart-products hidden-cart">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito">1</span>
+                                    <p class="titulo-producto-carrito">Zapatos Nike</p>
+                                    <span class="precio-producto-carrito">$80</span>
+                                </div>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="icon-close"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="cart-total">
+                                <h3>Total:</h3>
+                                <span class="total-pagar">$200</span>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                  
+                </div>
+            </div>
+
+        </div>
+    </nav>
     <!-- Close Header -->
 
 
+   
+
+
+
+
+
     <!-- Start Content Page -->
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid bg-light py-5" style="background: #39393a !important;">
         <div class="col-md-6 m-auto text-center"">
-            <h1 class="h1" style="font-weight: 900 !important; color: tomato;">Contacta con nosotros</h1>
-            <p>
+            <h1 class="h1" style="font-weight: 900 !important; color: rgb(218, 39, 39);">Contacta con nosotros</h1>
+            <p style="font-size: 25px; color: #fff;">
               Comunicate con nosotros para obtener más información o ante cualquier duda o consulta.
             </p>
         </div>
@@ -156,7 +149,7 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="button" onclick="sendMessage(5492616353271)" class="btn btn-success btn-lg px-3" style="background: tomato !important;">Enviar</button>
+                        <button type="button" onclick="sendMessage(5492616353271)" class="btn btn-success btn-lg px-3" style="background: rgb(172, 29, 4) !important;">Enviar</button>
                     </div>
                 </div>
                 </div>

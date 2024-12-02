@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    
+
+
+
     const btnCart = document.querySelector('.container-cart-icon');
     const containerCartProducts = document.querySelector('.container-cart-products');
     const cartInfo = document.querySelector('.cart-product');
@@ -172,17 +177,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
 document.querySelectorAll('.btn-ver').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const item = this.closest('.item');
         item.classList.toggle('show-info');
+
+        // Ocultar los botones 'Ver info' y 'Añadir al carrito' al abrir el panel
+        const viewButton = item.querySelector('.btn-ver');
+        const addCartButton = item.querySelector('.btn-add-cart');
+        viewButton.style.display = 'none';
+        addCartButton.style.display = 'none';
+
+        // Mostrar el botón 'Cerrar'
+        const closeButton = item.querySelector('.btn-close-info');
+        closeButton.style.display = 'block';
     });
 });
 
 document.querySelectorAll('.btn-close-info').forEach(button => {
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         const item = this.closest('.item');
         item.classList.remove('show-info');
+
+        // Mostrar nuevamente los botones 'Ver info' y 'Añadir al carrito'
+        const viewButton = item.querySelector('.btn-ver');
+        const addCartButton = item.querySelector('.btn-add-cart');
+        viewButton.style.display = 'block';
+        addCartButton.style.display = 'block';
+
+        // Ocultar el botón 'Cerrar'
+        const closeButton = item.querySelector('.btn-close-info');
+        closeButton.style.display = 'none';
     });
 });
 
@@ -201,3 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
         itemsContainer.scrollBy({ left: itemsContainer.clientWidth, behavior: 'smooth' });
     });
 });
+
+
+

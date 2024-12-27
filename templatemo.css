@@ -68,8 +68,9 @@ top: 40px;
 .leaflet-control a, .leaflet-control { font-size: 10px !important;}
 .form-control { border: 1px solid #e8e8e8;}
 /* Footer */
-#tempaltemo_footer a { color: #dcdde1;}
-#tempaltemo_footer a:hover { color: #68bb7d;}
+#tempaltemo_footer p {font-size: 20px;}
+#tempaltemo_footer a { color: #dcdde1; font-size: 18px;}
+#tempaltemo_footer a:hover { color: #c2441d;}
 #tempaltemo_footer ul.footer-link-list li { padding-top: 10px;}
 #tempaltemo_footer ul.footer-icons li {
   width: 2.6em;

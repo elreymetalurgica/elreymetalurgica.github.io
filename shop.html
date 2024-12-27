@@ -122,29 +122,6 @@ height: 80px"
 
 
 
-<style>
-    #resolution {
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-        z-index: 1000;
-    }
-</style>
-
-<div id="resolution"></div>
-<script>
-    const resolutionDiv = document.getElementById('resolution');
-    function updateResolution() {
-        resolutionDiv.textContent = `Width: ${window.innerWidth}px, Height: ${window.innerHeight}px`;
-    }
-    window.addEventListener('resize', updateResolution);
-    updateResolution(); // Llamar al cargar
-</script>
 
 
 
@@ -180,7 +157,7 @@ height: 80px"
         <div class="container-items">
             <div class="item" data-category="maquinaria">
                 <div class="item-img">
-                    <img
+                    <img id="hormun"
                         src="HormigoneraComun.png"
                         alt="producto"
                     />
@@ -188,12 +165,42 @@ height: 80px"
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momento las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p> Motor Angar 3/4HP Estandar,
+                        Tacho en chapa Nº18,
+                        Capacidad de 130 LTS, 
+                        Caño de 11/2" x 1,6MM, 
+                        Rueda maciza plástica, 
+                        Dimensiones: 120x120Cm</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Hormigonera reforzada</h2>
-                    <p class="price">$80</p>
+                    <h2>Hormig. reforzada 3/4HP</h2>
+                    <p class="price">$241.700</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="maquinaria">
+                <div class="item-img">
+                    <img id="hormun"
+                        src="HormigoneraComun.png"
+                        alt="producto"
+                    />
+                
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> Motor Angar 1HP Estandar,
+                        Tacho en chapa Nº18,
+                        Capacidad de 130 LTS, 
+                        Caño de 11/2" x 1,6MM, 
+                        Rueda maciza plástica, 
+                        Dimensiones: 120x120Cm</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Hormig. reforzada 1HP</h2>
+                    <p class="price">$250.500</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
@@ -207,397 +214,1122 @@ height: 80px"
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Motor Angar 3/4HP Estandar,
+                        Tacho en chapa Nº18,
+                        Capacidad de 130 LTS, 
+                        Caño de 11/2" x 1,6MM, 
+                        Rueda maciza plástica, 
+                        Dimensiones: 120x120Cm</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Hormigonera con caballete</h2>
-                    <p class="price">$20</p>
+                    <h2>Hormig. 3/4HP + caballete </h2>
+                    <p class="price">$266.400</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="item" data-category="carretilla">
+            <div class="item" data-category="maquinaria">
                 <div class="item-img">
                     <img
-                        src="CarretillaMarron.jpg"
+                        src="HormigoneraCaballete.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Motor Angar 1HP Estandar,
+                        Tacho en chapa Nº18,
+                        Capacidad de 130 LTS, 
+                        Caño de 11/2" x 1,6MM, 
+                        Rueda maciza plástica, 
+                        Dimensiones: 120x120Cm</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Hormig. 1HP + caballete </h2>
+                    <p class="price">$275.000</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="carvenllan"
+                        src="carretilla20llanta.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº20 con rueda neumática y llanta plástica, 130LTS </p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
                     <h2>Carretilla de chapa Nº20</h2>
-                    <p class="price">$90</p>
+                    <p class="price">$85.150</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="carretilla">
                 <div class="item-img">
-                    <img
-                        src="CarretillaAzul.png"
+                    <img id="carmerron"
+                        src="CarretillaMarron.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Carretilla de chapa Nº20 con rueda maciza plástica, 130LTS </p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Carretilla de chapa Nº18</h2>
-                    <p class="price">$50</p>
+                    <h2>Carretilla de chapa Nº20</h2>
+                    <p class="price">$72.400</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="carretilla">
                 <div class="item-img">
-                    <img
+                    <img id="carvazulneg"
+                        src="6.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº18 con rueda neumática y llanta plástica</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº18</h2>
+                    <p class="price">$88.000</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="carvazuli"
+                        src="8.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº18 con rueda neumática y llanta de chapa</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº18</h2>
+                    <p class="price">$106.700</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="carvarecu"
+                        src="2 (2).png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº18 recuperada con rueda neumática y llanta plástica</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº18</h2>
+                    <p class="price">$84.700</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="carvaplasti"
+                        src="7.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº18 con rueda maciza plástica</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº18</h2>
+                    <p class="price">$77.000</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="cargrito"
                         src="CarretillaGris.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Carretilla de chapa Nº16 con rueda neumática y llanta plástica</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
                     <h2>Carretilla de chapa Nº16</h2>
-                    <p class="price">$90</p>
+                    <p class="price">$102.300</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="cargruli"
+                        src="1.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Carretilla de chapa Nº16 con rueda neumática y llanta de chapa</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Carretilla de chapa Nº16</h2>
+                    <p class="price">$123.200</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="zorrit"
+                        src="zorra1.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Zorra de carga con rueda semineumática</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Zorra de carga sem.</h2>
+                    <p class="price">$114.840</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="carretilla">
+                <div class="item-img">
+                    <img id="zorrain"
+                        src="zorra2.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Zorra de carga con rueda maciza</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Zorra de carga maciza</h2>
+                    <p class="price">$79.100</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+
+
             <div class="item" data-category="hogar">
                 <div class="item-img">
-                    <img class="imagen-correr"
+                    <img id="calenton"
                     src="Calefones.png"
                     alt="producto"
                 />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Calefón 90L: <b>$65.000 </b><br>
+                        Calefón 125L: <b>$75.600</b>
+                    </p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
             
                 <div class="info-product">
-                    <h2>Calefones a leña 90L/120L</h2>
-                    <p class="price">$50</p>
+                    <h2>Calefon a leña 90L/125L</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="hogar">
+                <div class="item-img">
+                    <img id="salamin"
+                    src="salaman.png"
+                    alt="producto"
+                />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> Salamandra redonda chapa Nº18
+                    </p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+            
+                <div class="info-product">
+                    <h2>Salamandra</h2>
+                    <p class="price" >$75.600</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img id="tapawan"
+                        src="taparos.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> Tapa cámara 20x20: <b>$10.900</b> <br>
+                        Tapa cámara 60x60: <b>$29.180</b> <br>
+                    Tapa cámara 70x70: <b>$35.420</b> <br>
+                Tapa cámara 75x75: <b>$38.760</b> </p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Tapa cámara</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="constru">
                 <div class="item-img">
-                    <img class="imagen-correr"
+                    <img id="andaplex"
                         src="Andamio1.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Ancho: 0,65m <br>
+                        Alto: 1,65m <br>
+                        Largo: 1,20m <br>
+                        Incluye 2 tablones: <br>
+                        1,20m x 0,28m
+                    </p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Andamios plegables</h2>
-                    <p class="price">$50</p>
+                    <h2>Andamio plegable</h2>
+                    <p class="price">$132.000</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="constru">
                 <div class="item-img">
-                    <img class="imagen-correr"
+                    <img id="andamiu"
+                        src="andamiotubu (2).png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Andamio reforzado tubular apilable. Dimensiones: 1,90x1,30x2,50m
+                    </p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Andamio tubular</h2>
+                    <p class="price">$169.800</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img id="caballezul"
                         src="Caballete.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Caballete desmontable</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Caballetes para hormigonera</h2>
-                    <p class="price">$50</p>
-                    <button class="btn-ver">Ver más</button>
-                    <button class = "btn-add-cart">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="item" data-category="repuestos">
-                <div class="item-img">
-                    <img class="imagen-correr"
-                        src="Camara.png"
-                        alt="producto"
-                    />
-                </div>
-                <div class="item-infox">
-                    <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
-                    <button class="btn-close-info">Cerrar</button>             
-                </div>
-                <div class="info-product">
-                    <h2>Cámara de carretilla</h2>
-                    <p class="price">$50</p>
-                    <button class="btn-ver">Ver más</button>
-                    <button class = "btn-add-cart">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="item" data-category="repuestos">
-                <div class="item-img">
-                    <img
-                        src="Cubierta.png"
-                        alt="producto"
-                    />
-                </div>
-                <div class="item-infox">
-                    <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
-                    <button class="btn-close-info">Cerrar</button>             
-                </div>
-                <div class="info-product">
-                    <h2>Cubierta de carretilla</h2>
-                    <p class="price">$50</p>
-                    <button class="btn-ver">Ver más</button>
-                    <button class = "btn-add-cart">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="item" data-category="repuestos">
-                <div class="item-img">
-                    <img
-                        src="cubiertachapa.jpg"
-                        alt="producto"
-                    />
-                </div>
-                <div class="item-infox">
-                    <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
-                    <button class="btn-close-info">Cerrar</button>             
-                </div>
-                <div class="info-product">
-                    <h2>Rueda con llanta de chapa</h2>
-                    <p class="price">$50</p>
+                    <h2>Caballetes de hormigonera</h2>
+                    <p class="price">$33.700</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="constru">
                 <div class="item-img">
-                    <img
-                        src="valde.jpg"
+                    <img id="caballeblac"
+                        src="caballexten (3).png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Caballete extensible para tablón. Dimensiones: 60Cm x 1,20M <br>
+                    - Levanta hasta 2M</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Valde de albañileria</h2>
-                    <p class="price">$50</p>
+                    <h2>Caballete extensible</h2>
+                    <p class="price">$109.200</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img class="imagen-correr-grave"
+                    <img id="tachezu"
                         src="TachoHormigonera.jpg"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p> - Tacho común con paletas, chapa Nº18 con Nº20: <b>$70.200</b> <br>
+                    - Tacho reforzado con paletas, chapa Nº18 con Nº20: <b>$75.770</b></p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Tacho con batidores</h2>
-                    <p class="price">$50</p>
+                    <h2>Tacho común o reforzado</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="camar"
+                        src="Camara.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Cámara común</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cámara</h2>
+                    <p class="price">$7.370</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img
-                        src="plastica.png"
+                    <img id="cubier"
+                        src="Cubierta.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Cubierta reforzada 4 telas</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Rueda de plástico macizo</h2>
-                    <p class="price">$50</p>
+                    <h2>Cubierta 4 telas</h2>
+                    <p class="price">$16.390</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img
-                        src="Motor1hp.png"
+                    <img id="cubiercha"
+                        src="cubiertachapa.jpg"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Rueda neumática con llanta de chapa 4x80/4.00x8</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Motor ANGAR 1HP</h2>
-                    <p class="price">$50</p>
+                    <h2>Rueda neumática</h2>
+                    <p class="price">$35.750</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img
-                        src="Motor34.jpg"
+                    <img id="cubierplas"
+                        src="ruedaplaste.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Rueda neumática con llanta de plástico 4x80/4.00x8</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Motor ANGAR 3/4HP</h2>
-                    <p class="price">$50</p>
-                    <button class="btn-ver">Ver más</button>
-                    <button class = "btn-add-cart">Añadir al carrito</button>
-                </div>
-            </div>
-            <div class="item" data-category="repuestos">
-                <div class="item-img">
-                    <img
-                        src="corona.jpg"
-                        alt="producto"
-                    />
-                </div>
-                <div class="item-infox">
-                    <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
-                    <button class="btn-close-info">Cerrar</button>             
-                </div>
-                <div class="info-product">
-                    <h2>Corona para hormigonera</h2>
-                    <p class="price">$50</p>
+                    <h2>Rueda neumática</h2>
+                    <p class="price">$24.310</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="constru">
                 <div class="item-img">
-                    <img class="imagen-correr"
-                        src="Ganchitos.png"
+                    <img id="valdeson"
+                        src="valde.jpg"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Valdes de albañileria</p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Mensulas</h2>
-                    <p class="price">$50</p>
+                    <h2>Valdes por docena</h2>
+                    <p class="price">$18.200</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+   
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="rueplasti"
+                        src="plastica.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Rueda maciza de plástico</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Rueda de plástico macizo</h2>
+                    <p class="price">$5.590</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
             <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img class="imagen-correr"
+                    <img id="motorwan"
+                        src="Motor1hp (2).png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Motor Angar 1HP reforzado</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Motor ANGAR 1HP</h2>
+                    <p class="price">$82.300</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="motortre"
+                        src="Motor34.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Motor Angar 3/4HP Reforzado</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Motor ANGAR 3/4HP</h2>
+                    <p class="price">$70.400</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="coronto"
+                        src="corona.jpg"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Corona para hormigonera</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Corona para hormigonera</h2>
+                    <p class="price">$19.600</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="constru">
+                <div class="item-img">
+                    <img id="menso"
+                        src="Ganchitos.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Mensulas cortas/largas</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Mensulas</h2>
+                    <p class="price">$530</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="engran"
                         src="Engranaje.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>- Piñon 11 dientes recto: <b>$6.050</b> <br>
+                        - Piñon 13 dientes recto: <b>$7.980</b> <br>
+                        - Piñon 13 dientes helicoidal: <b>$8.580</b> <br></p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
                     <h2>Piñones para hormigonera</h2>
-                    <p class="price">$50</p>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="item" data-category="zing">
+            <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img class="imagen-correr"
-                        src="Canaletas2.png"
+                    <img id="ejenin"
+                        src="ejenon.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>- Eje con piñon 11 dientes rectos: <b>$8.250</b> <br>
+                        - Eje con piñon 13 dientes recto: <b>$10.220</b> <br>
+                        - Eje con piñon 13 dientes helicoidal: <b>$10.220</b> <br></p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Canaletas chapa galvanizada</h2>
-                    <p class="price">$50</p>
+                    <h2>Eje con piñón</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="item" data-category="zing">
+            <div class="item" data-category="repuestos">
                 <div class="item-img">
-                    <img class="imagen-correr"
-                        src="Caños2.png"
+                    <img id="cajanon"
+                        src="cajanonandmanes.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>- Caja con eje y piñon recto de 11 dientes para hormigonera con rulemanes 
+                        6003 <br>
+                        
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Caños de chapa galvanizada</h2>
-                    <p class="price">$50</p>
+                    <h2>Eje con piñon y rulemanes</h2>
+                    <p class="price">$21.450</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="ejenun"
+                        src="ejentral.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Eje central 25 para hormigonera<br>
+                        
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Eje central</h2>
+                    <p class="price" >$3.410</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="polein"
+                        src="poleats.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Polea grande 23Cm diámetro ext. eje 17: <b>$5.060</b><br> 
+                        - Polea chica 5Cm diámetro ext. eje 17: <b>$3.350</b><br></p>
+                
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Poleas</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="correat"
+                        src="correas.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> - Correa A31: <b>$6.920</b><br> 
+                        - Correa A32: <b>$7.130</b><br> 
+                        - Correa A33: <b>$7.400</b><br> 
+                        - Correa A34: <b>$7.570</b><br> 
+                        - Correa A35: <b>$7.810</b><br> 
+                        </p>
+                
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Correas</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="rulemin"
+                        src="rulenwan.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> - Ruleman 6003: <b>$2.230</b><br> 
+                        - Ruleman 6203: <b>$3.780</b><br> 
+                        - Ruleman 6205: <b>$6.000</b><br> 
+                        - Ruleman 6206: <b>$9.570</b><br>  
+                        </p>
+                
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Rulemanes</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="repuestos">
+                <div class="item-img">
+                    <img id="eji"
+                        src="ejetilla.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p> Eje para carretilla 
+                        </p>
+                
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Eje de carretilla</h2>
+                    <p class="price" > $1.800</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+
+
+
+
             <div class="item" data-category="zing">
                 <div class="item-img">
-                    <img class="imagen-correr"
+                    <img id="goter"
                         src="Goteros1.png"
                         alt="producto"
                     />
                 </div>
                 <div class="item-infox">
                     <h3>Características</h3>
-                    <p>Por el momentoide las aplicaciones mostradas en esta sección son las únicas que tengo con diseño de interfaces gráficas o Front-End. Por lo tanto te invito a visitar mis repositorios donde se encuentran los desarrollos Back-End como microservicios, APIs y más.</p>
+                    <p>Largo 2mts <br>
+                    - Ancho 14Cm: <b>$3.025</b> <br>
+                    - Ancho 16Cm: <b>$3.520</b> <br>
+                    - Ancho 20Cm: <b>$4.235</b></p>
                     <button class="btn-close-info">Cerrar</button>             
                 </div>
                 <div class="info-product">
-                    <h2>Goteros chapa galvanizada</h2>
-                    <p class="price">$50</p>
+                    <h2>Goteros para techo</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
                     <button class="btn-ver">Ver más</button>
                     <button class = "btn-add-cart">Añadir al carrito</button>
                 </div>
             </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="cenin"
+                        src="cenefa.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Cenefa 20x20: <b>$8.470 </b> <br>
+                       - Cenefa 25x25: <b>$10.580</b></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cenefa</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="cumbrin"
+                        src="cumbrera.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Cumbrera 20x20: <b>$8.470 </b> <br>
+                       - Cumbrera 25x25: <b>$10.580</b></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cumbrera para techo</h2>
+                    <p class="price" id="pricecha">$ Toca en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="canal"
+                        src="Canaletas2.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Largo 2mts <br>
+                       Ancho 9x10x11Cm</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Canaletas para techo</h2>
+                    <p class="price">$7.060</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            
+
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="tapin"
+                        src="tapabajada.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Tapa con bajada <br> 10Cm x 10Cm derecha/izquierda </p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Tapa con bajada</h2>
+                    <p class="price">$1.915</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="tapcan"
+                        src="tapacana.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Tapa para canaleta derecha/izquierda</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Tapa para canaleta</h2>
+                    <p class="price">$1.700</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="tapcen"
+                        src="tapacenter.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Tapa central con bajada <br> 10Cm x 10Cm</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Tapa central</h2>
+                    <p class="price">$1.700</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="eskin"
+                        src="esquinero.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Esquinero para canatela - Chapa galvanizada Nº30</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Esquinero</h2>
+                    <p class="price">$2.820</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="canin"
+                        src="Caños2.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Caño 7cm: <b>$3.125</b> <br>
+                        - Caño 8cm: <b>$3.125</b> <br>
+                        - Caño 9cm: <b>$3.620</b> <br>
+                        - Caño 10cm: <b>$3.620</b> <br>
+                        - Caño 11cm: <b>$4.340</b> <br>
+                        - Caño 12cm: <b>$4.340</b> <br>
+                        - Caño 15cm: <b>$5.400</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Caños de chapa</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="codon"
+                        src="codo90.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Codo 90º 75mm: <b>$1.515</b> <br>
+                        - Codo 90º 80mm: <b>$1.515</b> <br>
+                        - Codo 90º 90mm: <b>$2.350</b> <br>
+                        - Codo 90º 100mm: <b>$2.350</b> <br>
+                        - Codo 90º 110mm: <b>$3.290</b> <br>
+                        - Codo 90º 120mm: <b>$3.290</b> <br>
+                        - Codo 90º 150mm: <b>$3.960</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Codo fijo a 90º</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="codin"
+                        src="codo45.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Codo 45º 75mm: <b>$1.210</b> <br>
+                        - Codo 45º 80mm: <b>$1.210</b> <br>
+                        - Codo 45º 90mm: <b>$1.400</b> <br>
+                        - Codo 45º 100mm: <b>$1.400</b> <br>
+                        - Codo 45º 110mm: <b>$2.970</b> <br>
+                        - Codo 45º 120mm: <b>$2.970</b> <br>
+                        - Codo 45º 150mm: <b>$3.800</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Codo fijo a 45º</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="sombin"
+                        src="Sombremun.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Sombrero común 75mm: <b>$1.760</b> <br>
+                        - Sombrero común 80mm: <b>$1.760</b> <br>
+                        - Sombrero común 90mm: <b>$2.120</b> <br>
+                        - Sombrero común 100mm: <b>$2.120</b> <br>
+                        - Sombrero común 110mm: <b>$2.970</b> <br>
+                        - Sombrero común 120mm: <b>$2.970</b> <br>
+                        - Sombrero común 150mm: <b>$3.470</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Codo fijo a 90º</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="fadin"
+                        src="Sombrebado.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Sombrero aprobado 75mm: <b>$2.970</b> <br>
+                        
+                        - Sombrero aprobado 100mm: <b>$3.795</b> <br>
+                
+                        - Sombrero aprobado 120mm: <b>$4.620</b> <br>
+                        - Sombrero aprobado 150mm: <b>$5.940</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Sombrero aprobado</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="conan"
+                        src="conoductor.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>- Cono reductor 75-100mm: <b>$1.870</b> <br>
+                        
+                        - Cono reductor 100-120mm: <b>$2.970</b> <br>
+                
+                        - Cono reductor 100-150mm: <b>$2.970</b> <br></p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Cono reductor</h2>
+                    <p class="price" id="pricecha">$ Tocar en ver más</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="item" data-category="zing">
+                <div class="item-img">
+                    <img id="arin"
+                        src="Aireador.png"
+                        alt="producto"
+                    />
+                </div>
+                <div class="item-infox">
+                    <h3>Características</h3>
+                    <p>Aireador 90mm</p>
+                    <button class="btn-close-info">Cerrar</button>             
+                </div>
+                <div class="info-product">
+                    <h2>Aireador 90mm</h2>
+                    <p class="price">$ 3.080</p>
+                    <button class="btn-ver">Ver más</button>
+                    <button class = "btn-add-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+
+
+        
         </div>
         <button class="carousel-next">❯</button>
     </div>
